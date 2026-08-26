@@ -169,6 +169,13 @@ PLATFORM_VERSION_LAST_STABLE := $(PLATFORM_VERSION)
 TW_INCLUDE_CRYPTO := true
 TW_INCLUDE_CRYPTO_FBE := true
 TW_INCLUDE_FBE_METADATA_DECRYPT := true
+
+# Generate the AIDL -ndk_platform backend modules. libtar (TWRP android-14.1)
+# links android.security.apc-ndk_platform, android.system.keystore2-V1-ndk_platform,
+# android.security.authorization-ndk_platform and android.security.maintenance-ndk_platform
+# when FBE crypto is on. Without this flag soong never creates those modules and
+# ninja fails with "no known rule to make it".
+NEED_AIDL_NDK_PLATFORM_BACKEND := true
 BOARD_USES_METADATA_PARTITION := true
 BOARD_USES_QCOM_FBE_DECRYPTION := true
 BOARD_ROOT_EXTRA_FOLDERS += metadata my_version my_stock my_region my_product my_preload my_manifest my_heytap my_engineering my_company my_carrier my_bigball
