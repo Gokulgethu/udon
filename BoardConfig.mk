@@ -173,9 +173,6 @@ BOARD_USES_METADATA_PARTITION := true
 BOARD_USES_QCOM_FBE_DECRYPTION := true
 BOARD_ROOT_EXTRA_FOLDERS += metadata my_version my_stock my_region my_product my_preload my_manifest my_heytap my_engineering my_company my_carrier my_bigball
 
-# System as root
-BOARD_BUILD_SYSTEM_ROOT_IMAGE := false
-
 # Extras
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/system/etc/recovery.fstab
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
