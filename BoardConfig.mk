@@ -196,7 +196,9 @@ TW_INCLUDE_RESETPROP := true
 TW_EXCLUDE_APEX := false
 TW_NO_FLASH_CURRENT_TWRP := true # For A/B devices that has dedicated recovery, removing that option in Advance.
 TW_NO_SCREEN_BLANK := true
-TW_LOAD_VENDOR_MODULES := true
+# TW_LOAD_VENDOR_MODULES intentionally unset: with a prebuilt kernel it trips a
+# bug in vendor/twrp/build/tasks/kernel.mk:594 (tab-indented $(call twrp-depmod)
+# outside any rule -> "commands commence before first target" on kati parse)
 TW_EXTRA_LANGUAGES := true
 TW_BATTERY_SYSFS_WAIT_SECONDS := 5
 TW_PREPARE_DATA_MEDIA_EARLY := true
