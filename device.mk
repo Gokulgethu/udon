@@ -73,6 +73,15 @@ PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-service \
 	android.system.keystore2
 
+# AIDL crypto libs required by libtar's FBE link list (TW_INCLUDE_CRYPTO_FBE).
+# Without these in the module graph ninja fails with:
+#   "android.security.apc-ndk_platform.so.toc ... no known rule to make it"
+PRODUCT_PACKAGES += \
+    android.security.apc-ndk_platform \
+    android.system.keystore2-V1-ndk_platform \
+    android.security.authorization-ndk_platform \
+    android.security.maintenance-ndk_platform
+
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl \
