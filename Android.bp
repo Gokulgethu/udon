@@ -1,2 +1,14 @@
+//
+// Copyright (C) 2023-2026 The LineageOS Project
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
 soong_namespace {
+    imports: [
+        "hardware/oplus",
+        "hardware/qcom-caf/bootctrl",
+        "hardware/qcom-caf/common/libqti-perfd-client",
+        "vendor/qcom/opensource/commonsys-intf/display",
+    ],
 }

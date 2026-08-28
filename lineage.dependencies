@@ -1,0 +1,12 @@
+[
+  {
+    "repository": "Gokulgethu/android_vendor_oneplus_udon",
+    "target_path": "vendor/oneplus/udon",
+    "branch": "main"
+  },
+  {
+    "repository": "LineageOS/android_hardware_oplus",
+    "target_path": "hardware/oplus",
+    "branch": "lineage-21"
+  }
+]
