@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MediaCodecs>
+    <Decoders>
+        <MediaCodec name="c2.dolby.eac3.decoder" type="audio/eac3">
+            <Limit name="channel-count" max="8" />
+            <Limit name="sample-rate" ranges="32000,44100,48000" />
+            <Limit name="bitrate" range="32000-6144000" />
+        </MediaCodec>
+    </Decoders>
+</MediaCodecs>

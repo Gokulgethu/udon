@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module name="hearing_aid" halVersion="2.0">
+    <attachedDevices>
+        <item>Hearing Aid Out</item>
+    </attachedDevices>
+    <defaultOutputDevice>Hearing Aid Out</defaultOutputDevice>
+    <mixPorts>
+        <mixPort name="hearing aid output" role="source" flags="AUDIO_OUTPUT_FLAG_DEEP_BUFFER">
+            <profile name="" format="AUDIO_FORMAT_PCM_16_BIT"
+                     samplingRates="16000 24000 32000 44100 48000"
+                     channelMasks="AUDIO_CHANNEL_OUT_STEREO"/>
+        </mixPort>
+    </mixPorts>
+    <devicePorts>
+        <devicePort tagName="Hearing Aid Out" type="AUDIO_DEVICE_OUT_HEARING_AID" role="sink">
+            <profile name="" format="AUDIO_FORMAT_PCM_16_BIT"
+                     samplingRates="16000 24000 32000 44100 48000"
+                     channelMasks="AUDIO_CHANNEL_OUT_STEREO"/>
+        </devicePort>
+    </devicePorts>
+    <routes>
+        <route type="mix" sink="Hearing Aid Out" sources="hearing aid output"/>
+    </routes>
+</module>

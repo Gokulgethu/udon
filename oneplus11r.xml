@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- OnePlus 11R CPH2487 / udon sources -->
+  <remote name="github" fetch="https://github.com/" revision="main" />
+
+  <project name="Gokulgethu/android_device_oneplus_udon"
+           path="device/oneplus/udon"
+           remote="github"
+           revision="lineage-21" />
+  <project name="Gokulgethu/oneplus11r-device-trees"
+           path="device/oneplus/CPH2487"
+           remote="github"
+           revision="main" />
+  <project name="LineageOS/android_device_oneplus_sm8450-common"
+           path="device/oneplus/sm8450-common"
+           remote="github"
+           revision="lineage-21.0" />
+  <project name="LineageOS/android_kernel_oneplus_sm8450"
+           path="kernel/oneplus/sm8450"
+           remote="github"
+           revision="lineage-21.0" />
+  <project name="LineageOS/android_hardware_oplus"
+           path="hardware/oplus"
+           remote="github"
+           revision="lineage-21" />
+</manifest>

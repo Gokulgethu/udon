@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Power profile for OnePlus 11R 5G (SM8475 / 5000 mAh)
+-->
+<device name="Android">
+    <!-- None display power constants -->
+    <item name="ambient.on.display0">10.0</item>
+    <item name="screen.on.display0">95.0</item>
+    <item name="screen.full.display0">320.0</item>
+
+    <item name="bluetooth.active">15.0</item>
+    <item name="bluetooth.on">1.5</item>
+
+    <item name="wifi.on">2.5</item>
+    <item name="wifi.active">120.0</item>
+    <item name="wifi.scan">75.0</item>
+
+    <item name="audio">40.0</item>
+    <item name="video">85.0</item>
+    <item name="camera.flashlight">160.0</item>
+    <item name="camera.avg">650.0</item>
+    <item name="gps.on">50.0</item>
+
+    <!-- Radio / Cellular power -->
+    <item name="radio.active">140.0</item>
+    <item name="radio.scanning">10.0</item>
+    <array name="radio.on">
+        <value>2.0</value>
+        <value>1.0</value>
+    </array>
+
+    <!-- CPU Clusters (4 little + 3 mid + 1 prime = 8 cores) -->
+    <array name="cpu.clusters.cores">
+        <value>4</value>
+        <value>3</value>
+        <value>1</value>
+    </array>
+
+    <!-- Cluster 0: Cortex-A510 Little Cores -->
+    <array name="cpu.core_speeds.cluster0">
+        <value>403200</value>
+        <value>614400</value>
+        <value>806400</value>
+        <value>1017600</value>
+        <value>1209600</value>
+        <value>1401600</value>
+        <value>1612800</value>
+        <value>1804800</value>
+    </array>
+    <array name="cpu.core_power.cluster0">
+        <value>28</value>
+        <value>40</value>
+        <value>55</value>
+        <value>75</value>
+        <value>100</value>
+        <value>135</value>
+        <value>175</value>
+        <value>230</value>
+    </array>
+
+    <!-- Cluster 1: Cortex-A710 Gold Cores -->
+    <array name="cpu.core_speeds.cluster1">
+        <value>633600</value>
+        <value>844800</value>
+        <value>1056000</value>
+        <value>1267200</value>
+        <value>1478400</value>
+        <value>1689600</value>
+        <value>1900800</value>
+        <value>2112000</value>
+        <value>2323200</value>
+        <value>2534400</value>
+        <value>2745600</value>
+    </array>
+    <array name="cpu.core_power.cluster1">
+        <value>85</value>
+        <value>120</value>
+        <value>165</value>
+        <value>220</value>
+        <value>290</value>
+        <value>375</value>
+        <value>480</value>
+        <value>600</value>
+        <value>740</value>
+        <value>900</value>
+        <value>1100</value>
+    </array>
+
+    <!-- Cluster 2: Cortex-X2 Prime Core -->
+    <array name="cpu.core_speeds.cluster2">
+        <value>748800</value>
+        <value>1075200</value>
+        <value>1305600</value>
+        <value>1536000</value>
+        <value>1766400</value>
+        <value>1996800</value>
+        <value>2227200</value>
+        <value>2457600</value>
+        <value>2688000</value>
+        <value>2918400</value>
+        <value>3187200</value>
+    </array>
+    <array name="cpu.core_power.cluster2">
+        <value>140</value>
+        <value>220</value>
+        <value>310</value>
+        <value>420</value>
+        <value>560</value>
+        <value>720</value>
+        <value>920</value>
+        <value>1160</value>
+        <value>1450</value>
+        <value>1800</value>
+        <value>2300</value>
+    </array>
+
+    <item name="cpu.idle">15.0</item>
+
+    <!-- Battery Capacity (5000 mAh Dual-Cell 100W SuperVOOC) -->
+    <item name="battery.capacity">5000</item>
+
+    <item name="wifi.controller.idle">5.0</item>
+    <item name="wifi.controller.rx">120.0</item>
+    <item name="wifi.controller.tx">180.0</item>
+    <item name="wifi.controller.voltage">3700</item>
+</device>

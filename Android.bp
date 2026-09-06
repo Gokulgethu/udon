@@ -1,0 +1,60 @@
+//
+// Copyright (C) 2023-2026 The LineageOS Project
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+soong_namespace {
+    imports: [
+        "hardware/oplus",
+        "hardware/qcom-caf/bootctrl",
+        "hardware/qcom-caf/common/libqti-perfd-client",
+        "vendor/qcom/opensource/commonsys-intf/display",
+    ],
+}
+
+cc_library_static {
+    name: "libinit_oplus",
+    srcs: ["init/init_oplus.cpp"],
+    whole_static_libs: ["libbase"],
+    include_dirs: [
+        "system/core/init",
+    ],
+    recovery_available: true,
+}
+
+cc_library_static {
+    name: "libinit_oplus_taro",
+    srcs: ["init/init_oplus.cpp"],
+    whole_static_libs: ["libbase"],
+    include_dirs: [
+        "system/core/init",
+    ],
+    recovery_available: true,
+}
+
+cc_library_static {
+    name: "libinit_udon",
+    srcs: ["init/init_oplus.cpp"],
+    whole_static_libs: ["libbase"],
+    include_dirs: [
+        "system/core/init",
+    ],
+    recovery_available: true,
+}
+
+cc_library_static {
+    name: "libudfps_extension.oplus_taro",
+    srcs: ["touch/libudfps_extension.cpp"],
+    include_dirs: [
+        "frameworks/native/services/surfaceflinger",
+    ],
+}
+
+cc_library_static {
+    name: "libudfps_extension.udon",
+    srcs: ["touch/libudfps_extension.cpp"],
+    include_dirs: [
+        "frameworks/native/services/surfaceflinger",
+    ],
+}
